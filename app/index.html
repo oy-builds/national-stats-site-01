@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indonesia in Numbers — National Statistics</title>
+<meta name="description" content="Headline national statistics of Indonesia: population, economy, people and regions. Figures from BPS — Statistics Indonesia, each labelled with its period.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">ID</span>
+      <div>
+        <p class="brand-name">Indonesia in Numbers</p>
+        <p class="brand-sub">National statistics at a glance</p>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Sections">
+      <a href="#overview">Overview</a>
+      <a href="#economy">Economy</a>
+      <a href="#people">People</a>
+      <a href="#regions">Regions</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="overview" class="section">
+    <div class="hero">
+      <h1>The Republic of Indonesia, measured.</h1>
+      <p class="lede">284 million people, 38 provinces, one economy growing at about five percent a year.
+      Every figure on this page comes from BPS — Statistics Indonesia — and carries the period it belongs to.</p>
+      <div class="glance-strip" aria-label="Indonesia at a glance">
+        <span><strong>17,001</strong> islands</span>
+        <span><strong>38</strong> provinces</span>
+        <span><strong>514</strong> regencies &amp; cities</span>
+        <span><strong>1.9m km&sup2;</strong> land area</span>
+        <span><strong>Rp 22,139 tn</strong> GDP, 2024</span>
+      </div>
+    </div>
+    <h2 class="section-title">Headline indicators</h2>
+    <div id="stat-cards" class="card-grid"></div>
+    <p class="source-line">Source: BPS — Statistics Indonesia. Periods as labelled on each card.</p>
+  </section>
+
+  <section id="economy" class="section">
+    <h2 class="section-title">Economy</h2>
+    <p class="section-intro">Indonesia is Southeast Asia's largest economy. Growth held near 5% through the
+    post-pandemic years, inflation returned inside the central bank target band, and exports have exceeded
+    imports every year since 2020.</p>
+    <div class="chart-grid">
+      <figure class="panel">
+        <figcaption>
+          <h3>GDP growth, % year on year</h3>
+          <p class="chart-note">The 2020 dip is the pandemic contraction; 2022 marks the rebound peak.</p>
+        </figcaption>
+        <div id="chart-gdp"></div>
+        <p class="source-line">Source: BPS, national accounts, 2015–2024.</p>
+      </figure>
+      <figure class="panel">
+        <figcaption>
+          <h3>Inflation, % year on year</h3>
+          <p class="chart-note">Consumer price inflation, monthly readings. The dashed line is the 2.5% target midpoint.</p>
+        </figcaption>
+        <div id="chart-inflation"></div>
+        <p class="source-line">Source: BPS, consumer price index, Jan 2024 – Sep 2025.</p>
+      </figure>
+    </div>
+    <figure class="panel wide">
+      <figcaption>
+        <h3>Foreign trade, US$ billion</h3>
+        <p class="chart-note">Exports (dark) against imports (light). Surplus in 2024: about US$ 31 billion.</p>
+      </figcaption>
+      <div id="chart-trade"></div>
+      <p class="source-line">Source: BPS, foreign trade statistics, 2020–2024.</p>
+    </figure>
+  </section>
+
+  <section id="people" class="section">
+    <h2 class="section-title">People</h2>
+    <p class="section-intro">A young, increasingly connected population: a quarter of Indonesians are under 15,
+    literacy is near universal, and life expectancy keeps climbing.</p>
+    <div class="chart-grid">
+      <figure class="panel">
+        <figcaption>
+          <h3>Population by census, millions</h3>
+          <p class="chart-note">Census counts 1971–2020, with the mid-2025 official estimate.</p>
+        </figcaption>
+        <div id="chart-population"></div>
+        <p class="source-line">Source: BPS, population censuses and 2025 estimate.</p>
+      </figure>
+      <figure class="panel">
+        <figcaption>
+          <h3>Age structure, share of population</h3>
+          <p class="chart-note">The working-age bulge (25–54) is the core of the demographic dividend.</p>
+        </figcaption>
+        <div id="chart-age"></div>
+        <p class="source-line">Source: BPS, 2024 population structure estimates.</p>
+      </figure>
+    </div>
+    <h3 class="sub-title">Society in figures</h3>
+    <div id="social-list" class="social-list"></div>
+    <p class="source-line">Source: BPS — Statistics Indonesia, 2024 releases unless noted.</p>
+  </section>
+
+  <section id="regions" class="section">
+    <h2 class="section-title">Regions — the provinces</h2>
+    <p class="section-intro">Indonesia has 38 provinces. West Java alone holds about 50 million people —
+    more than Spain — while Jakarta packs over ten million into 664 km&sup2;. Sort the table by tapping a column head.</p>
+    <div class="table-wrap">
+      <table id="province-table">
+        <thead>
+          <tr>
+            <th data-sort="name">Province</th>
+            <th data-sort="capital">Capital</th>
+            <th data-sort="population" class="num">Population (millions)</th>
+            <th data-sort="area" class="num">Land area</th>
+          </tr>
+        </thead>
+        <tbody id="province-rows"></tbody>
+      </table>
+    </div>
+    <p class="source-line">Source: BPS provincial estimates, mid-2024. Fourteen largest and most-visited provinces shown of 38.</p>
+  </section>
+
+  <section id="sources" class="section">
+    <h2 class="section-title">Methodology &amp; sources</h2>
+    <div class="method-grid">
+      <div class="panel">
+        <h3>Where the numbers come from</h3>
+        <p>All headline figures are published series of BPS — Statistics Indonesia (Badan Pusat Statistik),
+        the national statistics office: national accounts for GDP, the consumer price index for inflation,
+        the National Labour Force Survey (Sakernas) for unemployment, the National Socioeconomic Survey
+        (Susenas) for poverty, and the population census and intercensal estimates for population.</p>
+      </div>
+      <div class="panel">
+        <h3>How to read this page</h3>
+        <p>Every figure carries its period — a year, a month, or a survey round — because statistics describe
+        a moment, not a timeless fact. Values are rounded to the precision BPS uses in its own headlines;
+        small differences from other summaries usually come from revisions between release rounds.</p>
+      </div>
+      <div class="panel">
+        <h3>About this site</h3>
+        <p>Indonesia in Numbers is an independent summary site. It is not the BPS website and does not speak
+        for BPS; it republishes BPS headline figures with attribution so they are easy to find, read and
+        compare. For official tables and microdata, consult BPS publications directly.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><strong>Indonesia in Numbers</strong> — national statistics of Indonesia, summarised.</p>
+    <p class="footer-note">Data: BPS — Statistics Indonesia (2024–2025 releases). Built as a static site: no trackers, no network requests, works offline.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
